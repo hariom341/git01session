@@ -5,18 +5,19 @@
 
 
 let str= "aabaa";
-let bag = 0;
+let bag = "";
 
 
-for ( i =0 ; i <str.length; i++){
-bag = str[i]+bag;
+for ( i =str.length-1 ; i>=0; i--){
+bag = bag+str[i];
 }
- if ( str ==bag){
+ if ( str==bag){
    console.log( "Palindrome");
    
  }
 else {
   console.log("not palindrome")
 }
+
 // console.log(str);
 // console.log(bag)

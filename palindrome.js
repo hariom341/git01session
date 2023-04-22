@@ -4,14 +4,14 @@
 // then we  have to find  is it  Palindrome  or not ?
 
 
-let str= "aabaa";
-let bag = 0;
+let str= "abaa";
+let bag = "";
 
 
-for ( i =0 ; i <str.length; i++){
-bag = str[i]+bag;
+for ( i =str.length-1 ; i >=0; i--){
+bag = bag + str[i];
 }
- if ( str ==bag){
+ if ( str==bag){
    console.log( "Palindrome");
    
  }
